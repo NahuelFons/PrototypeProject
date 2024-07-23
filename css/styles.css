@@ -1,0 +1,212 @@
+html {
+    scroll-behavior: smooth; 
+    font-size: 15px;
+}
+
+body {
+    margin: 0;
+    background-color: #f1f0f1;
+    font-family: "Rubik", sans-serif;
+    overflow-x: hidden; 
+}
+
+nav {
+    background-color: #f1f0f1;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    align-items: center;
+    height: 80px;
+    z-index: 10;
+}
+
+.prototype-logo {
+    position: absolute;
+    top: 10px;
+    margin-left: 50px;
+    height: 60px;
+}
+
+.nav-links {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 10x;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    font-family: "Exo", sans-serif;;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    padding: 10px 15px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #dfdfdf;
+}
+
+nav ul li a:focus,
+nav ul li a:active {
+    background-color: #01060c;
+    color: #f1f0f1;
+}
+
+.whatsapp-button {
+    position: absolute;
+    right: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: "Exo", sans-serif;;
+    font-weight: 500;
+    font-size: 1rem;
+    background-color: #01060c;
+    color: #f1f0f1;
+    padding: 10px 15px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    z-index: 20;
+}
+
+.whatsapp-icon {
+    width: 24px;
+    height: auto;
+}
+
+.horizontal-container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.section {
+    min-width: 100vw;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+
+.banner-content {
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start;
+    width: 100%;
+    height: auto;
+    margin-top: 120px;
+}
+
+.vehicle-image {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Text */
+.text-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; /* Espacio debajo del texto */
+}
+
+.project-text {
+    font-family: "Exo", sans-serif;
+    font-weight: 500;
+    font-size: 2rem; /* Ajusta el tamaño de fuente según sea necesario */
+    color: #01060c; /* Ajusta el color según sea necesario */
+    margin: 0;
+}
+
+/* Brands and social */ 
+.home-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 110px;
+}
+
+.brands-content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: auto;
+}
+
+.brand {
+    margin: 10px;
+    filter: grayscale(100%);
+    opacity: 0.6;
+    transition: all 0.3s ease-in-out;
+}
+
+.brand:hover {
+    filter: none;
+    opacity: 1;
+}
+
+.brand img {
+    max-width: 100px;
+    height: auto;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 25px; 
+    margin-right: 50px;
+}
+
+.social-icons a img {
+    width: 24px;
+    height: auto;
+}
+
+#llantas { background-color: #ffd6a5; }
+#nosotros { background-color: #fdffb6; }
+#galeria { background-color: #caffbf; }
+#contacto { background-color: #9bf6ff; }
+
+.next-section-button {
+    position: fixed;
+    right: 30px;
+    bottom: 60%;
+    transform: translateY(50%);
+    background-color: #ffffff;
+    color: #01060c;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0px 4px 34px -15px rgba(0, 0, 0, 1);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.next-section-button:hover {
+    background-color: #01060c;
+    color: #f1f0f1;
+}
