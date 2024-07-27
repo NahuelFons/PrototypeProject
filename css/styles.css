@@ -51,7 +51,7 @@ nav ul li a {
     font-family: "Exo", sans-serif;;
     font-weight: 600;
     text-decoration: none;
-    color: black;
+    color: #01060c;
     font-size: 1rem;
     padding: 10px 15px;
     border-radius: 50px;
@@ -60,6 +60,7 @@ nav ul li a {
 
 nav ul li a:hover {
     background-color: #dfdfdf;
+    text-decoration: none;
 }
 
 nav ul li a:focus,
@@ -88,6 +89,10 @@ nav ul li a:active {
     z-index: 20;
 }
 
+.whatsapp-button:hover {
+    text-decoration: none;
+}
+
 .whatsapp-icon {
     width: 24px;
     height: auto;
@@ -103,6 +108,7 @@ nav ul li a:active {
     min-width: 100vw;
     padding: 0 50px;
     box-sizing: border-box;
+    margin-top: 120px;
 }
 
 .banner-content {
@@ -111,7 +117,6 @@ nav ul li a:active {
     align-items: flex-start;
     width: 100%;
     height: auto;
-    margin-top: 120px;
 }
 
 .vehicle-image {
@@ -119,19 +124,18 @@ nav ul li a:active {
     height: auto;
 }
 
-/* Text */
 .text-content {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px; /* Espacio debajo del texto */
+    margin-bottom: 20px; 
 }
 
 .project-text {
     font-family: "Exo", sans-serif;
     font-weight: 500;
-    font-size: 2rem; /* Ajusta el tamaño de fuente según sea necesario */
-    color: #01060c; /* Ajusta el color según sea necesario */
+    font-size: 2rem;
+    color: #01060c;
     margin: 0;
 }
 
@@ -180,9 +184,30 @@ nav ul li a:active {
 .social-icons a img {
     width: 24px;
     height: auto;
+    transition: transform 0.3s;
 }
 
-#llantas { background-color: #ffd6a5; }
+.social-icons a img:hover {
+    transform: scale(1.2); 
+}
+
+/* Wheel Section */
+
+h1 {
+    font-size: 2rem;
+    color: #01060c;
+    padding-bottom: 30px;
+
+}
+
+.nav-tabs-vertical .nav-link {
+    display: block;
+    text-align: left;
+    padding-left: 10px;
+}
+
+
+
 #nosotros { background-color: #fdffb6; }
 #galeria { background-color: #caffbf; }
 #contacto { background-color: #9bf6ff; }
