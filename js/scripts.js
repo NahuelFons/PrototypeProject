@@ -29,3 +29,34 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const imageModal = document.getElementById('imageModal');
+    const carouselInner = document.querySelector('#carouselImages .carousel-inner');
+
+    imageModal.addEventListener('show.bs.modal', (event) => {
+        const button = event.relatedTarget; // Button that triggered the modal
+        const images = JSON.parse(button.getAttribute('data-images'));
+
+        // Clear existing carousel items
+        carouselInner.innerHTML = '';
+
+        images.forEach((src, index) => {
+            const item = document.createElement('div');
+            item.classList.add('carousel-item');
+            if (index === 0) item.classList.add('active');
+
+            const img = document.createElement('img');
+            img.src = src;
+            img.classList.add('d-block', 'w-100');
+            img.alt = 'Image';
+
+            item.appendChild(img);
+            carouselInner.appendChild(item);
+        });
+    });
+});
